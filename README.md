@@ -1,2 +1,2 @@
-# Word Addins
-In this brach will be commited all addins for Microsoft Word
+# MircrosoftAddIdns
+In this repository  will be committed add-ins based on Microsoft walkthroughs
