@@ -30,7 +30,15 @@ namespace WordDynamicControls
             }
         }
 
-
+        internal void CreateTable()
+        {
+            Word.Range tableLocation =
+                this.Application.ActiveDocument.Range(0, 0);
+            this.Application.ActiveDocument.Tables.Add(
+                tableLocation, 3, 4);
+            this.Application.ActiveDocument.Tables[1].Range.Font.Size = 8;
+            this.Application.ActiveDocument.Tables[1].set_Style("Table Grid");
+        }
         #region VSTO generated code
 
         /// <summary>

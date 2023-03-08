@@ -37,6 +37,7 @@ namespace WordDynamicControls
         {
             this.tab1 = this.Factory.CreateRibbonTab();
             this.group1 = this.Factory.CreateRibbonGroup();
+            this.drawTable = this.Factory.CreateRibbonButton();
             this.toggleBold = this.Factory.CreateRibbonButton();
             this.tab1.SuspendLayout();
             this.group1.SuspendLayout();
@@ -52,14 +53,21 @@ namespace WordDynamicControls
             // group1
             // 
             this.group1.Items.Add(this.toggleBold);
+            this.group1.Items.Add(this.drawTable);
             this.group1.Label = "Add Controls";
             this.group1.Name = "group1";
+            // 
+            // drawTable
+            // 
+            this.drawTable.Label = "Draw table";
+            this.drawTable.Name = "drawTable";
+            this.drawTable.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.drawTable_Click);
             // 
             // toggleBold
             // 
             this.toggleBold.Label = "Toggle bold";
             this.toggleBold.Name = "toggleBold";
-            this.toggleBold.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button1_Click);
+            this.toggleBold.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.toggleBold_Click);
             // 
             // MyRibbon
             // 
@@ -79,6 +87,7 @@ namespace WordDynamicControls
 
         internal Microsoft.Office.Tools.Ribbon.RibbonTab tab1;
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup group1;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton drawTable;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton toggleBold;
     }
 

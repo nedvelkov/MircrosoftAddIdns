@@ -17,9 +17,14 @@ namespace WordDynamicControls
 
         }
 
-        private void button1_Click(object sender, RibbonControlEventArgs e)
+        private void toggleBold_Click(object sender, RibbonControlEventArgs e)
         {
             Globals.ThisAddIn.ToggleTextBoldOnText();
+        }
+
+        private void drawTable_Click(object sender, RibbonControlEventArgs e)
+        {
+            Globals.ThisAddIn.CreateTable();
         }
     }
 }
