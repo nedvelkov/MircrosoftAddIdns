@@ -208,7 +208,7 @@
     <ManifestKeyFile>ExcelAddInWithButtons_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>768A5F48EEF2FC52DBEF68C9CFF66C361022AE65</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>0E7ECB5814A561463DF840628FEA7360EACC6FF8</ManifestCertificateThumbprint>
   </PropertyGroup>
   <!-- Include the build rules for a C# project. -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
