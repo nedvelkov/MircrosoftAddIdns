@@ -208,7 +208,7 @@
     <ManifestKeyFile>WordDynamicControls_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>5EBBE3F6C403756858D942D45CFD8A8273FEA832</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>0FDEEF955923BB8C3B8D2CEC3C26B83C2D4D74A9</ManifestCertificateThumbprint>
   </PropertyGroup>
   <!-- Include the build rules for a C# project. -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
